@@ -30,12 +30,12 @@
    comment
 */
 
--- Choose the correct server to connect
-USE MyDatabase;
-
 /* ==============================================================================
    SELECT ALL COLUMNS
 =============================================================================== */
+
+-- Choose the correct server to connect
+USE MyDatabase;
 
 -- Retrieve All Customer Data
 SELECT *
@@ -237,3 +237,4 @@ SELECT
     'New Customer' AS customer_type
 
 FROM customers;
+
