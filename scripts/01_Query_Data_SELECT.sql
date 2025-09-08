@@ -136,6 +136,16 @@ SELECT
 FROM customers
 GROUP BY country
 
+-- Group by using 2 columns to get the correct result
+
+SELECT 
+    country,
+    SUM(score) AS total_score
+FROM customers
+GROUP BY country, first_name
+
+	
+
 -- Find the total score and total number of customers for each country
 SELECT 
     country,
@@ -237,4 +247,5 @@ SELECT
     'New Customer' AS customer_type
 
 FROM customers;
+
 
