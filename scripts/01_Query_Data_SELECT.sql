@@ -30,6 +30,9 @@
    comment
 */
 
+-- Choose the correct server to connect
+USE MyDatabase;
+
 /* ==============================================================================
    SELECT ALL COLUMNS
 =============================================================================== */
@@ -232,4 +235,5 @@ SELECT
     id,
     first_name,
     'New Customer' AS customer_type
+
 FROM customers;
