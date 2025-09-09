@@ -155,7 +155,7 @@ FROM customers
 GROUP BY country
 
 /* ==============================================================================
-   HAVING (WHERE Condition that can be only used with GROUP BY)
+   HAVING (Filter that can be only used with GROUP BY)
 =============================================================================== */
 
 /* Find the average score for each country
@@ -247,6 +247,7 @@ SELECT
     'New Customer' AS customer_type
 
 FROM customers;
+
 
 
 
