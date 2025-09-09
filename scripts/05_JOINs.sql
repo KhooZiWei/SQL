@@ -91,7 +91,7 @@ FULL JOIN orders AS o
 ON c.id = o.customer_id
 
 /* ============================================================================== 
-   ADVANCED JOINS
+   ADVANCED JOINS (ANTI JOIN - To get data that is not matched)
 =============================================================================== */
 
 -- LEFT ANTI JOIN
@@ -176,4 +176,5 @@ ON o.CustomerID = c.CustomerID
 LEFT JOIN Sales.Products AS p
 ON o.ProductID = p.ProductID
 LEFT JOIN Sales.Employees AS e
+
 ON o.SalesPersonID = e.EmployeeID
