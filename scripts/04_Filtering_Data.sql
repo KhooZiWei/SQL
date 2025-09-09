@@ -6,7 +6,7 @@
 
    Table of Contents:
      1. Comparison Operators
-        - =, <>, >, >=, <, <=
+        - =, <> or =!, >, >=, <, <=
      2. Logical Operators
         - AND, OR, NOT
      3. Range Filtering
@@ -118,4 +118,5 @@ WHERE first_name LIKE '%r%'
 -- Find all customers whose first name has 'r' in the third position.
 SELECT *
 FROM customers
+
 WHERE first_name LIKE '__r%'
