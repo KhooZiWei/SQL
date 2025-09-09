@@ -74,7 +74,7 @@ FROM customers
 WHERE NOT score < 500
 
 /* ============================================================================== 
-   RANGE FILTERING - BETWEEN
+   RANGE FILTERING - BETWEEN (Include Boundaries Value)
 =============================================================================== */
 
 -- Retrieve all customers whose score falls in the range between 100 and 500.
@@ -120,4 +120,5 @@ SELECT *
 FROM customers
 
 WHERE first_name LIKE '__r%'
+
 
