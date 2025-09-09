@@ -104,6 +104,8 @@ FROM Sales.Employees;
 
 /* TASK 2: 
    Combine the data from Employees and Customers into one table, including duplicates, using UNION ALL 
+
+   Important: UNION ALL has better performance. If confirm two tables dont have duplicates, it's always adviced to use UNION ALL instead of UNION.
 */
 SELECT
     FirstName,
@@ -175,4 +177,5 @@ SELECT
     Sales,
     CreationTime
 FROM Sales.OrdersArchive
+
 ORDER BY OrderID;
