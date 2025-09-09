@@ -81,7 +81,7 @@ FROM customers
 WHERE score IS NULL
 
 /* ============================================================================== 
-   DELETE
+   DELETE & TRUNCATE (DELETE can use WHERE as it checks the data row by row (more performance), but TRUNCATE cant use WHERE as it will delete the whole table)
 =============================================================================== */
 
 -- Select customers with an ID greater than 5 before deleting
@@ -98,3 +98,4 @@ DELETE FROM persons
 
 -- Faster method to delete all rows, especially useful for large tables
 TRUNCATE TABLE persons
+
