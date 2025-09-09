@@ -177,5 +177,5 @@ SELECT
     Sales,
     CreationTime
 FROM Sales.OrdersArchive
-
 ORDER BY OrderID;
+
