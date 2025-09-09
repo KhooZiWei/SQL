@@ -6,7 +6,7 @@
 
    Table of Contents:
      1. Comparison Operators
-        - =, <> or =!, >, >=, <, <=
+        - =, <> or !=, >, >=, <, <=
      2. Logical Operators
         - AND, OR, NOT
      3. Range Filtering
@@ -120,3 +120,4 @@ SELECT *
 FROM customers
 
 WHERE first_name LIKE '__r%'
+
