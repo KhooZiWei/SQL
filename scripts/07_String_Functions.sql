@@ -63,7 +63,7 @@ WHERE LEN(first_name)  != LEN(TRIM(first_name))
 -- Remove dashes (-) from a phone number
 SELECT
 '123-456-7890' AS phone,
-REPLACE('123-456-7890', '-', '/') AS clean_phone
+REPLACE('123-456-7890', '-', '') AS clean_phone
 
 -- Replace File Extence from txt to csv
 SELECT
@@ -115,3 +115,4 @@ SELECT
 first_name, 
 UPPER(LOWER(first_name)) AS nesting
 FROM customers
+
