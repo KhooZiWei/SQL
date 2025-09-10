@@ -258,7 +258,7 @@ FROM Sales.Orders;
    ISDATE()
 ===============================================================================*/
 
-!!!Important: Only the date that follows the SQL international date time format will be validated
+!!!Important: Only the date that follows the SQL international date time format will be validated (yyyy-MM-dd or yyyy)
 
 /* TASK 18:
    Validate OrderDate using ISDATE and convert valid dates.
@@ -278,5 +278,6 @@ FROM (
 ) AS t
 
 -- WHERE ISDATE(OrderDate) = 0
+
 
 
