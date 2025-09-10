@@ -71,7 +71,7 @@ SELECT
 REPLACE('report.txt', '.txt', '.csv') AS new_filename
 	
 /* ============================================================================== 
-   LEN() - String Length & Trimming
+   LEN() - String Length
 =============================================================================== */
 
 -- Calculate the length of each customer's first name
@@ -115,4 +115,5 @@ SELECT
 first_name, 
 UPPER(LOWER(first_name)) AS nesting
 FROM customers
+
 
