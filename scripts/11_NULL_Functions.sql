@@ -20,7 +20,7 @@
 !!!Important: It's always adviced to use COALESCE instead of ISNULL, better for data migration
 
 /* ==============================================================================
-   HANDLE NULL - DATA AGGREGATION
+   HANDLE NULL - MATHEMATICAL OPERATORS 
 ===============================================================================*/
 
 /* TASK 1: 
@@ -36,7 +36,7 @@ SELECT
 FROM Sales.Customers;
 
 /* ==============================================================================
-   HANDLE NULL - MATHEMATICAL OPERATORS
+   HANDLE NULL - DATA AGGREGATION
 ===============================================================================*/
 
 /* TASK 2: 
@@ -135,3 +135,4 @@ SELECT
     COALESCE(NULLIF(TRIM(Category), ''), 'unknown') AS Policy3
 
 FROM Orders;
+
