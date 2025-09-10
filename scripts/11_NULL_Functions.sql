@@ -17,6 +17,8 @@
 ===============================================================================
 */
 
+!!!Important: It's always adviced to use COALESCE instead of ISNULL, better for data migration
+
 /* ==============================================================================
    HANDLE NULL - DATA AGGREGATION
 ===============================================================================*/
@@ -131,4 +133,5 @@ SELECT
     TRIM(Category) AS Policy1,
     NULLIF(TRIM(Category), '') AS Policy2,
     COALESCE(NULLIF(TRIM(Category), ''), 'unknown') AS Policy3
+
 FROM Orders;
