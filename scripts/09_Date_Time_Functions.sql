@@ -96,6 +96,9 @@ SELECT
     EOMONTH(CreationTime) AS EndOfMonth
 FROM Sales.Orders;
 
+
+!!! Important: Can use DATETRUNC(month, value) to get the first day of the month
+
 /* ==============================================================================
    DATE PARTS | USE CASES
 ===============================================================================*/
@@ -273,3 +276,4 @@ FROM (
 ) AS t
 
 -- WHERE ISDATE(OrderDate) = 0
+
