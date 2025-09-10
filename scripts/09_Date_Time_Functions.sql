@@ -46,16 +46,19 @@ FROM Sales.Orders;
 SELECT
     OrderID,
     CreationTime,
-    -- DATETRUNC Examples
+   
+    -- DATETRUNC Examples: Reset the date time on specified variable
     DATETRUNC(year, CreationTime) AS Year_dt,
     DATETRUNC(day, CreationTime) AS Day_dt,
     DATETRUNC(minute, CreationTime) AS Minute_dt,
-    -- DATENAME Examples
+   
+    -- DATENAME Examples: Get the name in STRING
     DATENAME(month, CreationTime) AS Month_dn,
     DATENAME(weekday, CreationTime) AS Weekday_dn,
     DATENAME(day, CreationTime) AS Day_dn,
     DATENAME(year, CreationTime) AS Year_dn,
-    -- DATEPART Examples
+   
+    -- DATEPART Examples: Get the value in INT
     DATEPART(year, CreationTime) AS Year_dp,
     DATEPART(month, CreationTime) AS Month_dp,
     DATEPART(day, CreationTime) AS Day_dp,
@@ -81,7 +84,7 @@ FROM Sales.Orders
 GROUP BY DATETRUNC(year, CreationTime);
 
 /* ==============================================================================
-   EOMONTH()
+   EOMONTH(): End of the month
 ===============================================================================*/
 
 /* TASK 4:
@@ -268,4 +271,5 @@ FROM (
     SELECT '2025-08-23' UNION
     SELECT '2025-08'
 ) AS t
+
 -- WHERE ISDATE(OrderDate) = 0
