@@ -126,7 +126,7 @@ SELECT
 FROM Sales.Orders;
 
 /* ============================================================
-   SQL WINDOW RANKING | CUME_DIST
+   SQL WINDOW RANKING | CUME_DIST OR PERCENT_RANK()
    ============================================================ */
 
 /* TASK 9:
@@ -141,7 +141,8 @@ FROM (
     SELECT
         Product,
         Price,
-        CUME_DIST() OVER (ORDER BY Price DESC) AS DistRank
+        CUME_DIST() OVER (ORDER BY Price DESC) AS DistRank /* Just change the CUME_DIST() to PERCENT_RANK() */
     FROM Sales.Products
 ) AS PriceDistribution
+
 WHERE DistRank <= 0.4;
