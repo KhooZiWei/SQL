@@ -19,6 +19,8 @@
    SQL WINDOW AGGREGATION | COUNT
    ============================================================ */
 
+!!!Important: If the specified column contains NULL value, the NULL value will not be calculated. If using *, NULL value will be calculated
+
 /* TASK 1:
    Find the Total Number of Orders and the Total Number of Orders for Each Customer
 */
@@ -203,4 +205,5 @@ SELECT
     OrderDate,
     Sales,
     AVG(Sales) OVER (PARTITION BY ProductID ORDER BY OrderDate ROWS BETWEEN CURRENT ROW AND 1 FOLLOWING) AS RollingAvg
+
 FROM Sales.Orders
