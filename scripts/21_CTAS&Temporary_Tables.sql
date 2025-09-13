@@ -1,4 +1,17 @@
 /* ==============================================================================
+   SQL CTAS
+-------------------------------------------------------------------------------
+   This script creates a permanent table for screenshot
+=================================================================================
+*/
+
+SELECT
+   *
+INTO Sales.MonthlyOrders
+FROM Sales.Orders
+WHERE ;
+
+/* ==============================================================================
    SQL Temporary Tables
 -------------------------------------------------------------------------------
    This script provides a generic example of data migration using a temporary
@@ -27,3 +40,4 @@ SELECT
     *
 INTO Sales.OrdersTest
 FROM #Orders;
+
