@@ -43,4 +43,7 @@ SELECT
 INTO Sales.OrdersTest
 FROM #Orders;
 
+!!!Important: It's adviced to use VIEW or CTAS for storing the data, temporary table is only used for temporary result
+
+   Priority: VIEW -> CTE -> SubQuery -> CTAS -> Temporary Table
 
