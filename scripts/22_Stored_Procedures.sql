@@ -15,6 +15,8 @@
 =================================================================================
 */
 
+!!!Important: It's adviced to use Python for controlling the flow instead of Stored Procedure as Stored Procedure is hard to debug for big projects
+
 /* ==============================================================================
    Basic Stored Procedure
 ============================================================================== */
@@ -239,4 +241,5 @@ GO
 --Execute Stored Procedure
 EXEC GetCustomerSummary @Country = 'Germany';
 EXEC GetCustomerSummary @Country = 'USA';
+
 EXEC GetCustomerSummary;
